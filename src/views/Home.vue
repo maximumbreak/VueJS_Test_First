@@ -29,17 +29,18 @@
         >Skill : React , Angular , NodeJS , Golang , AWS , Firebase , etc.</p>
       </div>
     </section>
+    <Framework></Framework>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
+import Framework from '@/components/Framework.vue'
 
 export default {
   name: 'Home',
   components: {
-    //  HelloWorld
+    Framework
   }
 }
 </script>
