@@ -30,17 +30,40 @@
       </div>
     </section>
     <Framework></Framework>
+    <div class="flex justify-center bg-gray-200 py-8">
+      <h2 class="text-3xl font-semibold text-gray-800">
+        <span class="text-gray-600 rounded px-1">Last Post</span>
+      </h2>
+    </div>
+    <Article
+      title="มาใช้ Package management สำหรับ deno กันเถอะ"
+      desc="หลังจากที่ผมได้ลองเล่น Deno มาได้สักพักก็ไปนึกถึง npm ที่เป็น Package management แล้วก็มาเจอ Trex ซึ่งอ่านว่าทีเร็กซ์ นั้นเป็นตัวจัดการที่ทำหน้าที่คล้าย npm เลย แต่ก็มีสิ่งที่เราต้องรู้จักก่อนที่จะใช้ Trex นั่นคือ import_map.json"
+      link="https://dev.to/beforesecond/package-management-deno-19n0"
+    ></Article>
+    <Article
+      title="มาลองเล่น Deno GraphQL พร้อมกับทำ Deno Hot Reload กันเถอะ"
+      desc="มาวันนี้หลาย ๆ คนก็น่าจะรู้จัก Deno มาสักพักแล้ว Deno เป็น Runtime ตัวใหม่ของ
+Javascript ที่จะมาแทน Node ในอนาคตสำหรับใครยังไม่ได้ติดตั้ง Deno ไปติดตั้งกันเลยดีกว่า"
+      link="https://dev.to/beforesecond/deno-graphql-deno-hot-reload-29mb"
+    ></Article>
+    <Article
+      title="มาลองใช้ NestJS ทำ GraphQL Server กัน (ฉบับผู้เริ่มต้น)"
+      desc="ทุกวันนี้ผมใช้ express + apollo ทำ GraphQL Server แต่ปีนี้ในทีมก็มีมติว่าจะเปลี่ยนไปเขียน TypeScript ซึ่งจะตอบโจทย์ในเรื่องของ NewBie Mistakes ตอนแรกว่าจะเขียนไว้อ่านเอง แต่ก็อยากมาแชร์ให้ทุก ๆ คนมาลองดูกันครับ"
+      link="https://dev.to/beforesecond/nestjs-graphql-server-36o6"
+    ></Article>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Framework from '@/components/Framework.vue'
+import Article from '@/components/Article.vue'
 
 export default {
   name: 'Home',
   components: {
-    Framework
+    Framework,
+    Article
   }
 }
 </script>
